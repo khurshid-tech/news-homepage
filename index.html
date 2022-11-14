@@ -12,8 +12,20 @@
   <main class="wrapper">
       <header>
         <img src="assets/images/logo.svg" alt="">
-        <img src="assets/images/icon-menu.svg" class="lg-hidden" alt="">
-        <ul class="menubar sm-hidden">
+        <img src="assets/images/icon-menu.svg" class="lg-hidden menu-icon" alt="">
+        <div class="menubar-container lg-hidden">
+          <div class="close-icon">
+            <img src="assets/images/icon-menu-close.svg" class="lg-hidden" alt="">
+          </div>
+          <ul class="menubar">
+            <li>Home</li>
+            <li>New</li>
+            <li>Popular</li>
+            <li>Trending</li>
+            <li>Categories</li>
+          </ul>
+        </div>
+        <ul class="menubar-lg sm-hidden">
           <li>Home</li>
           <li>New</li>
           <li>Popular</li>
@@ -87,4 +99,5 @@
       </div>
   </main>
 </body>
+<script src="js/script.js"></script>
 </html>

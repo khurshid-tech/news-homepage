@@ -30,6 +30,46 @@ header {
     display: none;
 }
 
+.menubar-container {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 290px;
+    height: 100%;
+    background-color: white;
+    transition: 0.3s;
+    padding: 0 2rem;
+}
+
+.sidebar-visible {
+    right: 0;
+}
+
+.sidebar-hidden {
+    right: -300px;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.menubar {
+    list-style: none;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.4rem;
+    color: #000;
+
+}
+
+.menubar-container .close-icon {
+    text-align: right;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
 .landing-one {
     display: flex;
     flex-direction: column;
@@ -140,10 +180,13 @@ header {
         display: none;
     }
 
-    header .menubar {
+    header .menubar-lg {
         display: flex;
+        flex-direction: row;
         list-style: none;
         gap: 2rem;
+        margin-top: 0;
+        font-size: inherit;
     }
 
     header .menubar li {
